@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">GFG Survey Form</h1>
+        <p id="description">Give us your important feedback.</p>
+    </header>
+
+    <main>
+        <form action="#" id="survey-form">
+            <div class="form-control">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter full name" required>
+            </div>
+
+            <div class="form-control">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-control">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" min="18" max="80" placeholder="Enter your age" required>
+            </div>
+
+            <div class="form-control">
+                <label for="dropdown" id="dropdown">Which option best describes you?</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="0">Student</option>
+                    <option value="1">Employee</option>
+                    <option value="2">Freelancer</option>
+                </select>
+            </div>
+
+
+            <div class="form-control">
+                <label>Would you recommend Coding
+                    to a friend?</label>
+
+                <label for="radio1">
+                    <input type="radio" name="radio" value="yes" id="radio1">Yes
+                </label>
+
+                <label for="radio2">
+                    <input type="radio" name="radio" value="no" id="radio2">No
+                </label>
+            </div>
+
+
+
+            <div class="form-control">
+                <label for="fl">Languages and Frameworks known(Check boxes)</label>
+
+
+                <label for="fl">
+                    <input type="checkbox" name="fl" value="html" id="fl">HTML
+                </label>
+
+
+                <label for="sl">
+                    <input type="checkbox" name="sl" value="css" id="sl">CSS
+                </label>
+
+
+                <label for="tl">
+                    <input type="checkbox" name="tl" value="js" id="tl">JavaScript
+                </label>
+            </div>
+
+            <div class="form-control">
+                <label for="textarea">Any comments or suggestions</label>
+                <textarea name="textarea" id="textarea" cols="32" rows="5"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <button id="submit">Submit</button>
+        </form>
+    </main>
+
+
+</body>
+
+</html>
